@@ -1,0 +1,100 @@
+/* GROUP CONFIG */
+.rollgroups.group-config {
+  max-height: 95%;
+
+  .content {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    & [data-action=addGroup] {
+      min-height: calc(1.25* var(--input-height));
+    }
+
+    & fieldset[data-idx] {
+      & legend {
+        display: flex;
+        gap: 0.5rem;
+
+        & input {
+          flex: 0 0 100px;
+          width: 100px;
+        }
+
+        & button {
+          flex: 0 0 20px;
+
+          .fa-solid {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* CONFIG BUTTON */
+.dnd5e.sheet.item h4 .rollgroups.config-button {
+  float: right;
+  opacity: 1;
+}
+
+/* SAVE CONFIG BUTTON */
+.dnd5e.sheet.item .rollgroups.save-config-button {
+  flex: 0 0 18px;
+  color: #7a7971;
+  text-align: right;
+}
+
+/* WEAPON PICKER */
+.rollgroups.weapon-picker {
+  height: auto !important;
+  width: auto;
+  overflow: hidden;
+
+  .window-header .window-title {
+    visibility: visible;
+    color: initial;
+    font-family: Arial;
+    font-weight: bold;
+  }
+
+  .weapons {
+    height: auto;
+    overflow: auto;
+    display: flex;
+    max-width: 100%;
+    scroll-behavior: smooth;
+    justify-content: space-around;
+  }
+
+  .weapon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+    margin: 5px;
+
+    & img {
+      max-height: 150px;
+      max-width: 150px;
+      min-width: 150px;
+      border-radius: 10px;
+    }
+
+    & i.fa-solid {
+      display: none;
+    }
+
+    & button {
+      width: 150px;
+      overflow: hidden;
+      display: flex;
+      line-height: 20px;
+      font-size: 14px;
+      margin: 2px 0;
+      height: 56px;
+    }
+  }
+}

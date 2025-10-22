@@ -1,52 +1,74 @@
 {
-  "id": "rollgroups",
+
+  "name": "rollgroups",
+
   "title": "Roll Groups",
-  "version": "AUTOMATIC",
-  "authors": [
-    {
-      "name": "Zhell",
-      "url": "https://github.com/krbz999",
-      "discord": "zhell9201",
-      "ko-fi": "https://ko-fi.com/zhell",
-      "patreon": "https://patreon.com/zhell"
-    }
+
+  "description": "Allows splitting damage rolls into groups for 5e items and spells.",
+
+  "version": "1.0.0",
+
+  "author": "krbz999 (patched for 4.4.1 by Shaun)",
+
+  "minimumCoreVersion": "12",
+
+  "compatibleCoreVersion": "12.x",
+
+  "esmodules": [
+
+    "rollgroups.js"
+
   ],
-  "compatibility": {
-    "minimum": "12",
-    "maximum": "12",
-    "verified": "12"
-  },
-  "esmodules": ["scripts/module.mjs"],
-  "styles": ["styles/styles.css"],
-  "relationships": {
-    "systems": [
-      {"id": "dnd5e", "compatibility": {"minimum": "3.3.0", "maximum": "3.3.9"}},
-      {"id": "sw5e", "compatibility": {"minimum": "2.0.0"}}
-    ]
-  },
+
+  "styles": [
+
+    "styles/rollgroups.css"
+
+  ],
+
+  "packs": [],
+
   "languages": [
+
     {
+
       "lang": "en",
+
       "name": "English",
-      "path": "lang/en.json",
-      "flags": {}
-    },
-    {
-      "lang": "de",
-      "name": "Deutsch",
-      "path": "lang/de.json",
-      "flags": {}
-    },
-    {
-      "lang": "pt-BR",
-      "name": "Português (Brasil)",
-      "path": "lang/pt-BR.json",
-      "flags": {}
+
+      "path": "lang/en.json"
+
     }
+
   ],
-  "flags": {"hotReload": {"extensions": ["css"], "paths": ["styles/styles.css"]}},
-  "url": "https://github.com/krbz999/rollgroups",
-  "license": "https://raw.githubusercontent.com/krbz999/babonus/main/LICENSE",
-  "manifest": "https://github.com/krbz999/rollgroups/releases/latest/download/module.json",
-  "download": "AUTOMATIC"
+
+  "system": [
+
+    "dnd5e"
+
+  ],
+
+  "compatibleGameSystem": {
+
+    "dnd5e": "4.4.1"
+
+  },
+
+  "manifest": "https://github.com/avoidantai/Soviets-Orin/raw/RollGroups4.4/rollgroups/module.json",
+
+  "download": "https://github.com/avoidantai/Soviets-Orin/raw/RollGroups4.4/rollgroups/rollgroups.zip",
+
+  "url": "https://github.com/avoidantai/Soviets-Orin/tree/RollGroups4.4",
+
+  "readme": "README.md",
+
+  "scripts": [
+
+    "rollgroups.js"
+
+  ]
+
 }
+
+
+
