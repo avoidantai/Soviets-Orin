@@ -18,8 +18,8 @@
   ],
   "relationships": {
     "systems": [
-      { "id": "dnd5e", "compatibility": {"minimum": "3.3.0", "maximum": "4.4.4"}},
-      { "id": "sw5e" }
+      {"id": "dnd5e", "compatibility": {"minimum": "3.3.0", "maximum": "4.4.4"}},
+      {"id": "sw5e", "compatibility": {"minimum": "2.0.0"}}
     ]
   },
   "compatibility": {
