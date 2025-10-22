@@ -6,12 +6,8 @@
   "author": "krbz999 (patched for 4.4.1 by Shaun)",
   "minimumCoreVersion": "12",
   "compatibleCoreVersion": "^12",
-  "esmodules": [
-    "scripts/module.mjs"
-  ],
-  "styles": [
-    "styles/rollgroups.css"
-  ],
+  "esmodules": ["scripts/module.mjs"],
+  "styles": ["styles/rollgroups.css"],
   "packs": [],
   "languages": [
     {
@@ -21,7 +17,11 @@
     }
   ],
   "relationships": {
-    "systems": ["dnd5e"]
+    "systems": [
+      {
+        "id": "dnd5e"
+      }
+    ]
   },
   "compatibility": {
     "foundry": "^12",
