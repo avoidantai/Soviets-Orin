@@ -1,5 +1,5 @@
 {
-  "name": "Soviets-Orin",
+  "name": "rollgroups",
   "title": "Roll Groups",
   "description": "Allows splitting damage rolls into groups for 5e items and spells.",
   "version": "1.0.0",
