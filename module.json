@@ -7,7 +7,7 @@
   "minimumCoreVersion": "12",
   "compatibleCoreVersion": "^12",
   "esmodules": ["scripts/module.mjs"],
-  "styles": ["styles/rollgroups.css"],
+  "styles": ["styles/styles.css"],
   "packs": [],
   "languages": [
     {
