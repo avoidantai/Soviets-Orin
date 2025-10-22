@@ -26,7 +26,7 @@
   "compatibleGameSystem": {
     "dnd5e": "4.4.1"
   },
-  "manifest": "https://raw.githubusercontent.com/avoidantai/Soviets-Orin/main/module.json",
+  "manifest": "https://raw.githubusercontent.com/avoidantai/Soviets-Orin/module.json",
   "download": "https://github.com/avoidantai/Soviets-Orin/archive/refs/heads/main.zip",
   "url": "https://github.com/avoidantai/Soviets-Orin",
   "readme": "README.md",
