@@ -10,7 +10,7 @@
     "scripts/module.mjs"
   ],
   "styles": [
-    "styles/rollgroups.css"
+    "styles/styles.css"
   ],
   "packs": [],
   "languages": [
