@@ -18,9 +18,8 @@
   ],
   "relationships": {
     "systems": [
-      {
-        "id": "dnd5e"
-      }
+      { "id": "dnd5e" },
+      { "id": "sw5e" }
     ]
   },
   "compatibility": {
