@@ -180,11 +180,24 @@ class Module {
    * Create the button in item sheets to open the roll groups config menu.
    * Hooks on 'renderItemSheet'.
    * @param {ItemSheet5e} sheet     The sheet of an item.
-   * @param {HTMLElement} html      The element of the sheet.
+   * @param {HTMLElement|jQuery|Array} html      The element of the sheet.
    */
   static createConfigButton(sheet, html) {
     try {
-      const addDamage = html.querySelector(".add-damage");
+      // Normalize html to a real HTMLElement (support HTMLElement, jQuery, or [HTMLElement])
+      const root = (function(h) {
+        if (!h) return null;
+        if (h instanceof HTMLElement) return h;
+        if (h.jquery && h.length) return h[0];
+        if (Array.isArray(h) && h.length && h[0] instanceof HTMLElement) return h[0];
+        // Fallback: if it has querySelector, assume it's fine
+        if (typeof h.querySelector === "function") return h;
+        return null;
+      })(html);
+
+      if (!root) return;
+
+      const addDamage = root.querySelector(".add-damage");
       if (addDamage) {
         const div = document.createElement("DIV");
         div.innerHTML = `
@@ -197,7 +210,7 @@ class Module {
         addDamage.after(div.firstElementChild);
       }
 
-      const saveScaling = html.querySelector("[name='system.save.scaling']");
+      const saveScaling = root.querySelector("[name='system.save.scaling']");
       if (saveScaling) {
         const div = document.createElement("DIV");
         div.innerHTML = `
@@ -210,10 +223,9 @@ class Module {
         saveScaling.after(div.firstElementChild);
       }
     } catch (err) {
-      console.error(`${this.ID} | createConfigButton error`, err);
+      console.error(`${Module.ID} | createConfigButton error`, err);
     }
   }
-
   /**
    * Create the listener for each rollgroups button in a chat message.
    * Hooks on 'renderChatMessage'.
