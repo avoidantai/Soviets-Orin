@@ -23,6 +23,6 @@
   "ROLLGROUPS.Versatile": "Versatile",
   "ROLLGROUPS.VersatileGroup": "Versatile Group:",
   "ROLLGROUPS.VersatileTooltip": "The roll group that the 'Versatile' button will roll. The first formula in the group will be replaced by the Versatile formula.",
-  "ROLLGROUPS.Weapon": "Weapon"
+  "ROLLGROUPS.Weapon": "Weapon",
   "ROLLGROUPS.Save": "Save"
 }
